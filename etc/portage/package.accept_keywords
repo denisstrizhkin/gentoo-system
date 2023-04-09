@@ -1,0 +1,4 @@
+dev-util/android-studio ~amd64
+dev-util/idea-community ~amd64
+
+gui-apps/wofi ~amd64

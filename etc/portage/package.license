@@ -1,0 +1,4 @@
+dev-util/android-studio android
+dev-util/idea-community codehaus-classworlds
+
+sys-kernel/linux-firmware linux-fw-redistributable

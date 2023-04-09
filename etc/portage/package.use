@@ -1,0 +1,30 @@
+app-editors/vim -crypt
+
+www-client/chromium screencast system-ffmpeg cups
+dev-libs/libxml2 icu
+media-libs/harfbuzz icu
+sys-libs/zlib minizip
+net-libs/nodejs inspector
+app-text/ghostscript-gpl cups
+x11-libs/libdrm video_cards_radeon
+
+media-video/pipewire extra ffmpeg flatpak gstreamer  pipewire-alsa sound-server
+media-sound/mpg123 -pulseaudio
+media-libs/libsndfile minimal
+
+media-libs/mesa X vulkan
+media-libs/libglvnd X
+x11-libs/gtk+ X
+media-libs/libepoxy X
+x11-libs/cairo X
+
+gui-wm/sway X
+gui-apps/swaybg gdk-pixbuf
+x11-libs/gdk-pixbuf jpeg
+gui-libs/wlroots X
+
+net-misc/remmina rdp
+net-misc/freerdp X
+dev-libs/libdbusmenu gtk3
+
+sys-apps/systemd gnuefi
