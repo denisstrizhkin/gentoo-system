@@ -1,0 +1,7 @@
+# Default settings for chromium. This file is sourced by /bin/bash from
+# the chromium launcher.
+
+# Options to pass to chromium.
+CHROMIUM_FLAGS="--force-dark-mode
+--enable-features=WebUIDarkMode,UseOzonePlatform
+--ozone-platform=wayland"
