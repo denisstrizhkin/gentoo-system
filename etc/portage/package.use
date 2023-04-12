@@ -23,6 +23,8 @@ gui-apps/swaybg gdk-pixbuf
 x11-libs/gdk-pixbuf jpeg
 gui-libs/wlroots X
 
+media-gfx/imv gif
+
 net-misc/remmina rdp
 net-misc/freerdp X
 dev-libs/libdbusmenu gtk3

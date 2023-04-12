@@ -3,5 +3,4 @@
 
 # Options to pass to chromium.
 CHROMIUM_FLAGS="--force-dark-mode
---enable-features=WebUIDarkMode,UseOzonePlatform
---ozone-platform=wayland"
+--enable-features=WebUIDarkMode"
