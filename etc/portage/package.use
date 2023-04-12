@@ -12,6 +12,9 @@ media-video/pipewire extra ffmpeg flatpak gstreamer  pipewire-alsa sound-server
 media-sound/mpg123 -pulseaudio
 media-libs/libsndfile minimal
 
+media-sound/mpd flac -curl -eventfd -ffmpeg -icu -inotify -mad -pulseaudio -fifo
+media-libs/audiofile flac
+
 media-libs/mesa X vulkan
 media-libs/libglvnd X
 x11-libs/gtk+ X
