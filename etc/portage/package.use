@@ -1,5 +1,7 @@
 app-editors/vim -crypt
 
+app-containers/docker cli
+
 www-client/chromium screencast system-ffmpeg cups
 dev-libs/libxml2 icu
 media-libs/harfbuzz icu
@@ -12,6 +14,8 @@ media-video/pipewire extra ffmpeg flatpak gstreamer  pipewire-alsa sound-server
 media-sound/mpg123 -pulseaudio
 media-libs/libsndfile minimal
 
+media-video/mpv vulkan -egl -iconv -pulseaudio -uchardet -xv
+media-libs/libplacebo glslang -opengl -shaderc 
 media-sound/mpd flac -curl -eventfd -ffmpeg -icu -inotify -mad -pulseaudio -fifo
 media-libs/audiofile flac
 
