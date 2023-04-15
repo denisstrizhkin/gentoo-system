@@ -32,4 +32,6 @@ net-misc/remmina rdp
 net-misc/freerdp X
 dev-libs/libdbusmenu gtk3
 
+app-emulation/qemu aio -bzip2 -curl fdt -filecaps -gnutls -jpeg ncurses -oss pin-upstream-blobs -png -xattr -zstd spice -vnc gtk
+
 sys-apps/systemd gnuefi

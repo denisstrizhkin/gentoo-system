@@ -1,7 +1,9 @@
 app-admin/stow
 app-admin/sudo
+app-arch/p7zip
 app-editors/neovim
 app-editors/vim
+app-emulation/qemu
 app-misc/neofetch
 app-misc/resolve-march-native
 app-misc/tmux
@@ -17,6 +19,7 @@ app-text/wgetpaste
 app-text/zathura
 app-text/zathura-pdf-mupdf
 dev-db/oracle-instantclient
+dev-python/virtualenv
 dev-util/android-studio
 dev-util/idea-community
 dev-util/vulkan-tools
