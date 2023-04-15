@@ -1,10 +1,10 @@
 app-admin/stow
 app-admin/sudo
-app-emulation/qemu
 app-arch/p7zip
 app-containers/docker
-app-editors/neovim
+app-containers/docker-cli
 app-editors/vim
+app-emulation/qemu
 app-laptop/laptop-mode-tools
 app-misc/neofetch
 app-misc/resolve-march-native
@@ -15,8 +15,6 @@ app-portage/genlop
 app-portage/gentoolkit
 app-shells/bash-completion
 app-shells/gentoo-zsh-completions
-app-shells/zsh
-app-shells/zsh-completions
 app-text/wgetpaste
 app-text/zathura
 app-text/zathura-pdf-mupdf
@@ -58,5 +56,6 @@ sys-power/acpi
 sys-process/htop
 virtual/jdk
 www-client/chromium
+www-client/lynx
 x11-misc/xdg-user-dirs
 x11-themes/arc-theme
