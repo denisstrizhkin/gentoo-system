@@ -1,6 +1,7 @@
 app-admin/stow
 app-admin/sudo
 app-arch/p7zip
+app-arch/unzip
 app-containers/docker
 app-containers/docker-cli
 app-editors/vim
