@@ -1,6 +1,8 @@
 app-admin/stow
 app-admin/sudo
 app-arch/p7zip
+app-containers/docker
+app-containers/docker-cli
 app-editors/vim
 app-emulation/qemu
 app-laptop/laptop-mode-tools
@@ -20,6 +22,7 @@ dev-db/oracle-instantclient
 dev-python/virtualenv
 dev-util/android-studio
 dev-util/idea-community
+dev-util/vulkan-tools
 dev-vcs/git
 gui-apps/foot
 gui-apps/grim
@@ -35,9 +38,11 @@ media-gfx/imv
 media-sound/mpd
 media-sound/pulsemixer
 media-sound/vimpc
+media-video/mpv
 media-video/pipewire
 net-fs/sshfs
 net-misc/dhcpcd
+net-misc/remmina
 net-vpn/openvpn
 net-wireless/wpa_supplicant
 sys-apps/systemd
