@@ -1,43 +1,37 @@
-app-editors/vim -crypt
+app-editors/vim -*
 
-www-client/chromium screencast system-ffmpeg cups
-dev-libs/libxml2 icu
-media-libs/harfbuzz icu
-sys-libs/zlib minizip
-net-libs/nodejs inspector
-app-text/ghostscript-gpl cups
-x11-libs/libdrm video_cards_radeon
+www-client/firefox-bin -* pulseaudio wayland ffmpeg
 
-media-video/pipewire extra ffmpeg flatpak gstreamer  pipewire-alsa sound-server
-media-sound/mpg123 -pulseaudio
-media-libs/libsndfile minimal
+sys-apps/xdg-desktop-portal screencast
 
-media-video/mpv vulkan -egl -iconv -pulseaudio -uchardet -xv
-media-libs/libplacebo glslang -opengl -shaderc 
-media-sound/mpd flac -curl -eventfd -ffmpeg -icu -inotify -mad -pulseaudio -fifo
-media-libs/audiofile flac
+media-video/pipewire -* sound-server systemd dbus
+media-libs/libpulse dbus
 
-media-libs/mesa X vulkan
-media-libs/libglvnd X
-x11-libs/gtk+ X
-media-libs/libepoxy X
-x11-libs/cairo X
+media-video/ffmpeg -* vaapi threads encode CPU_FLAGS_X86: aes avx avx2 f16c fma3 mmx mmxext pclmul popcnt rdrand sha sse sse2 sse3 sse4_1 sse4_2 sse4a ssse3
+media-video/mpv -* lua cli vulkan wayland libplacebo vaapi drm pipewire PYTHON_SINGLE_TARGET: python3_11 LUA_SINGLE_TARGET: lua5-1
+media-libs/libplacebo -* 
+media-sound/mpd -* pipewire systemd flac opus
 
-gui-wm/sway X
+media-libs/vulkan-loader wayland X
+dev-util/vulkan-tools wayland
+media-libs/mesa X wayland vulkan
+x11-libs/gtk+ X wayland
+media-libs/libva wayland
+
+gui-wm/sway -* X man swaybar
 gui-apps/swaybg gdk-pixbuf
 x11-libs/gdk-pixbuf jpeg
 gui-libs/wlroots X
+gui-apps/grim -* man
+gui-apps/foot -*
 
-media-gfx/imv gif
+media-gfx/imv -* png jpeg gif wayland
 
-net-misc/remmina rdp
-net-misc/freerdp X
-dev-libs/libdbusmenu gtk3
+net-misc/remmina -* wayland rdp
 
-app-emulation/qemu aio -bzip2 -curl fdt -filecaps -gnutls -jpeg ncurses -oss pin-upstream-blobs -png -xattr -zstd spice -vnc gtk
+app-emulation/qemu -* aio fdt pam pin-upstream-blobs slirp spice udev vhost-net pulseaudio PYTHON_TARGETS: python3_11 QEMU_SOFTMMU_TARGETS: x86_64
+net-misc/spice-gtk -* gtk3 wayland
 
 sys-apps/systemd gnuefi
-
-dev-python/pillow webp
-virtual/imagemagick-tools jpeg tiff
-media-gfx/imagemagick jpeg tiff
+net-misc/networkmanager -* systemd tools nss wifi
+net-wireless/wpa_supplicant -* dbus
