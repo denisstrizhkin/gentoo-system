@@ -34,6 +34,7 @@ gui-libs/xdg-desktop-portal-wlr
 gui-wm/sway
 media-fonts/dina
 media-fonts/kochi-substitute
+media-fonts/terminus-font
 media-gfx/imv
 media-sound/mpd
 media-sound/pulsemixer

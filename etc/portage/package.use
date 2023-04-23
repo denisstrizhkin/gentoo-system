@@ -35,3 +35,5 @@ net-misc/spice-gtk -* gtk3 wayland
 sys-apps/systemd gnuefi
 net-misc/networkmanager -* systemd tools nss wifi
 net-wireless/wpa_supplicant -* dbus
+
+media-fonts/terminus-font -* pcf-unicode
