@@ -4,3 +4,8 @@ dev-util/idea-community ~amd64
 dev-util/sccache ~amd64
 
 gui-apps/wofi ~amd64
+
+# monero
+net-p2p/monero ~amd64
+dev-libs/randomx ~amd64
+dev-libs/supercop ~amd64
