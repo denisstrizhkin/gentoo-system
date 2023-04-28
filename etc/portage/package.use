@@ -1,13 +1,14 @@
 media-video/pipewire sound-server
 
 media-video/mpv pipewire -xv -pulseaudio 
-media-sound/mpd pipewire flac opus -pulseaudio -audiofile
+media-sound/mpd doc pipewire flac opus -pulseaudio -audiofile
 
 media-libs/vulkan-loader wayland X
-dev-util/vulkan-tools wayland
+dev-util/vulkan-tools cube
 media-libs/mesa X wayland vulkan
 x11-libs/gtk+ X wayland
 media-libs/libva wayland
+>=x11-libs/cairo-1.12.14-r4 X
 
 gui-wm/sway -* X man swaybar
 gui-apps/swaybg gdk-pixbuf
@@ -16,19 +17,27 @@ gui-libs/wlroots X
 
 media-gfx/imv -* png jpeg gif wayland
 
-net-misc/remmina -* wayland rdp
+# remmina
+net-misc/remmina wayland rdp
+>=net-misc/freerdp-2.10.0 X
+>=dev-libs/libdbusmenu-16.04.0-r2 gtk3
 
-app-emulation/qemu -* aio fdt pam pin-upstream-blobs slirp spice udev vhost-net pulseaudio PYTHON_TARGETS: python3_11 QEMU_SOFTMMU_TARGETS: x86_64
-net-misc/spice-gtk -* gtk3 wayland
+app-emulation/qemu spice pulseaudio
+net-misc/spice-gtk gtk3 wayland
 
 sys-apps/systemd gnuefi
 net-misc/networkmanager -* systemd tools nss wifi
+
+# kernel
+sys-kernel/gentoo-kernel savedconfig
 
 # chromium
 www-client/chromium cups
 >=media-libs/harfbuzz-6.0.0 icu
 >=dev-libs/libxml2-2.10.3-r1 icu
 >=sys-libs/zlib-1.2.13-r1 minizip
+>=app-text/ghostscript-gpl-9.09 cups
+>=net-libs/nodejs-20.0.0 inspector
 
 # monero
 >=net-dns/unbound-1.16.3 threads
