@@ -51,7 +51,9 @@ net-p2p/monero
 net-print/cups
 net-vpn/wireguard-tools
 sys-apps/flatpak
+sys-apps/pciutils
 sys-apps/systemd
+sys-apps/usbutils
 sys-apps/zram-generator
 sys-fs/btrfs-progs
 sys-kernel/gentoo-kernel
@@ -60,6 +62,7 @@ sys-kernel/linux-firmware
 sys-libs/compiler-rt-sanitizers
 sys-power/acpi
 www-client/firefox-bin
+www-client/google-chrome
 www-client/lynx
 x11-apps/setxkbmap
 x11-apps/xrandr
