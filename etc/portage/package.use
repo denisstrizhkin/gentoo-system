@@ -36,3 +36,7 @@ app-text/texlive-core xetex
 # gimp
 >=app-text/poppler-23.04.0 cairo
 >=media-libs/gegl-0.4.44 cairo introspection
+
+# required by app-text/zathura-cb-0.1.10::gentoo
+# required by app-text/zathura-cb (argument)
+>=x11-libs/gdk-pixbuf-2.42.10-r1 jpeg
