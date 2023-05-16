@@ -40,3 +40,20 @@ app-text/texlive-core xetex
 # required by app-text/zathura-cb-0.1.10::gentoo
 # required by app-text/zathura-cb (argument)
 >=x11-libs/gdk-pixbuf-2.42.10-r1 jpeg
+
+>=media-libs/babl-0.1.102 introspection
+# required by sys-auth/polkit-122-r1::gentoo[systemd]
+# required by sys-apps/accountsservice-23.13.9::gentoo
+# required by gnome-extra/cinnamon-desktop-5.6.2::gentoo
+# required by gnome-extra/nemo-5.6.5::gentoo
+# required by @selected
+# required by @world (argument)
+sys-apps/systemd policykit
+
+app-text/xmlto text
+media-libs/harfbuzz icu
+
+# required by sys-kernel/installkernel-systemd-boot-2::gentoo
+# required by sys-kernel/gentoo-kernel-6.1.24::gentoo
+# required by virtual/dist-kernel-6.1.24::gentoo
+>=sys-apps/systemd-utils-252.9 boot
