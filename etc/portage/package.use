@@ -36,3 +36,20 @@ app-text/texlive-core xetex
 # gimp
 >=app-text/poppler-23.04.0 cairo
 >=media-libs/gegl-0.4.44 cairo introspection
+
+>=media-libs/babl-0.1.102 introspection
+# required by sys-auth/polkit-122-r1::gentoo[systemd]
+# required by sys-apps/accountsservice-23.13.9::gentoo
+# required by gnome-extra/cinnamon-desktop-5.6.2::gentoo
+# required by gnome-extra/nemo-5.6.5::gentoo
+# required by @selected
+# required by @world (argument)
+sys-apps/systemd policykit
+
+app-text/xmlto text
+media-libs/harfbuzz icu
+
+# required by sys-kernel/installkernel-systemd-boot-2::gentoo
+# required by sys-kernel/gentoo-kernel-6.1.24::gentoo
+# required by virtual/dist-kernel-6.1.24::gentoo
+>=sys-apps/systemd-utils-252.9 boot

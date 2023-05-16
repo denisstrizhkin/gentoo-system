@@ -6,3 +6,5 @@ dev-db/oracle-instantclient OTN
 sys-kernel/linux-firmware linux-fw-redistributable
 
 media-fonts/kochi-substitute free-noncomm
+
+www-client/google-chrome google-chrome

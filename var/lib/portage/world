@@ -59,7 +59,6 @@ sys-fs/btrfs-progs
 sys-kernel/gentoo-kernel
 sys-kernel/installkernel-systemd-boot
 sys-kernel/linux-firmware
-sys-libs/compiler-rt-sanitizers
 sys-power/acpi
 www-client/firefox-bin
 www-client/google-chrome
