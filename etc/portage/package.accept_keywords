@@ -10,4 +10,9 @@ net-p2p/monero ~amd64
 dev-libs/randomx ~amd64
 dev-libs/supercop ~amd64
 
+app-misc/radeontop ~amd64
+
 # minetest
+games-action/minetest ~amd64
+dev-games/irrlicht-mt ~amd64
+dev-games/irrlicht-mt-headers ~amd64

@@ -7,6 +7,7 @@ app-containers/docker-cli
 app-containers/docker-compose
 app-containers/podman
 app-editors/vim
+app-editors/vis
 app-emulation/qemu
 app-eselect/eselect-python
 app-eselect/eselect-repository
@@ -56,9 +57,8 @@ sys-apps/flatpak
 sys-apps/pciutils
 sys-apps/systemd
 sys-apps/usbutils
-sys-apps/zram-generator
 sys-fs/btrfs-progs
-sys-kernel/gentoo-kernel
+sys-kernel/gentoo-kernel-bin
 sys-kernel/installkernel-systemd-boot
 sys-kernel/linux-firmware
 sys-power/acpi
@@ -71,6 +71,6 @@ x11-base/xorg-server
 x11-misc/rofi
 x11-misc/xclip
 x11-misc/xdg-user-dirs
-x11-terms/alacritty
+x11-terms/st
 x11-themes/arc-theme
 x11-wm/cwm

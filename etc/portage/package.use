@@ -1,13 +1,11 @@
 media-video/pipewire sound-server
+media-sound/pulseaudio -daemon
 media-libs/libcanberra alsa
 
 media-video/mpv pipewire -xv -pulseaudio 
 media-sound/mpd doc pipewire flac opus -pulseaudio -audiofile
 
 dev-util/vulkan-tools cube
-
-# network manager lto only with gcc
-net-misc/networkmanager -lto
 
 # remmina
 net-misc/remmina rdp
