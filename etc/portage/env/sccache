@@ -1,0 +1,2 @@
+CC="sccache ${CC}"
+CXX="sccache ${CXX}"

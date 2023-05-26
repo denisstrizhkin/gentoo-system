@@ -16,3 +16,6 @@ app-misc/radeontop ~amd64
 games-action/minetest ~amd64
 dev-games/irrlicht-mt ~amd64
 dev-games/irrlicht-mt-headers ~amd64
+sys-boot/systemd-boot
+
+app-misc/ranger **

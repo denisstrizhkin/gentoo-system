@@ -1,1 +1,1 @@
-COMMON_FLAGS="-march=native -O2 -pipe"
+COMMON_FLAGS="-march=znver1 -O3 -pipe"
