@@ -2,11 +2,16 @@
 */* CPU_FLAGS_X86: aes avx avx2 f16c fma3 mmx mmxext pclmul popcnt rdrand sha sse sse2 sse3 sse4_1 sse4_2 sse4a ssse3
 
 # global use flags
-*/* elogind wayland vulkan pulseaudio man -X -iconv -nls -ipv6 -bzip2 -lzma -zstd
+*/* elogind wayland vulkan pulseaudio man 
+*/* -alsa -X -kmod -iconv -nls -ipv6 -bzip2 -lzma -zstd -doc -gtk-doc
 
 # sway (X for Xwayland)
+gui-wm/hyprland X
+dev-qt/qtbase eglfs egl opengl
+dev-qt/qtdeclarative opengl
+dev-qt/qtgui eglfs egl
 gui-wm/sway X
-gui-libs/wlroots X
+gui-libs/wlroots X x11-backend
 gui-apps/swaybg gdk-pixbuf
 x11-libs/gdk-pixbuf jpeg
 
@@ -19,6 +24,11 @@ x11-libs/gtk+ X
 # wayland screencast
 sys-apps/xdg-desktop-portal screencast
 
+# gimp
+media-gfx/gimp webp
+app-text/poppler cairo
+media-libs/gegl cairo
+
 # cube for vulkan test
 dev-util/vulkan-tools cube
 
@@ -30,7 +40,7 @@ media-sound/pulseaudio -daemon
 dev-lang/python pgo lto
 
 # mpv
-media-video/mpv pipewire -xv -pulseaudio iconv
+media-video/mpv pipewire -xv -pulseaudio iconv cli
 
 # mpd
 media-sound/mpd doc pipewire flac opus -pulseaudio -audiofile
@@ -43,12 +53,20 @@ net-misc/remmina rdp
 net-misc/freerdp X
 dev-libs/libdbusmenu gtk3
 
-# qemu
-app-emulation/qemu spice pulseaudio
-net-misc/spice-gtk gtk3
+# qemu virt-manager
+sys-apps/dbus X
+app-emulation/libvirt pcap numa fuse policykit
+app-emulation/virt-manager gui
+net-dns/dnsmasq ipv6 script
+app-emulation/qemu spice pulseaudio usb usbredir
+net-misc/spice-gtk gtk3 usbredir
 
 # minetest
 games-action/minetest -server
+
+# oshu
+media-libs/libsdl2 gles2 opengl
+media-libs/sdl2-image jpeg
 
 # kernel
 sys-kernel/gentoo-kernel savedconfig
@@ -64,9 +82,10 @@ app-text/texlive-core xetex
 # ???
 app-text/xmlto text
 media-libs/harfbuzz icu
+app-text/ghostscript-gpl cups
 
-# lto errors even on gcc???
-net-misc/networkmanager -lto
+# networkmanager
+net-misc/networkmanager iwd -modemmanager -ppp -wext
 
 # systemd boot
 sys-apps/systemd-utils boot
@@ -82,5 +101,9 @@ media-gfx/imagemagick heif jpeg
 media-libs/libheif x265
 
 # clang bootstrap
-sys-devel/clang-common default-compiler-rt default-lld llvm-libunwind
-sys-libs/llvm-libunwind static-libs
+#sys-devel/clang-common default-compiler-rt default-lld llvm-libunwind
+#sys-libs/llvm-libunwind static-libs
+
+# libreoffice
+app-office/libreoffice-l10n L10N: en ru 
+dev-libs/xmlsec nss

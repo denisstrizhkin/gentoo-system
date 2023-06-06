@@ -16,6 +16,20 @@ app-misc/radeontop ~amd64
 games-action/minetest ~amd64
 dev-games/irrlicht-mt ~amd64
 dev-games/irrlicht-mt-headers ~amd64
-sys-boot/systemd-boot
 
 app-misc/ranger **
+
+# hyperland
+gui-wm/hyprland
+dev-libs/hyprland-protocols **
+gui-libs/xdg-desktop-portal-hyprland **
+>=dev-qt/qtbase-6.4.3
+>=dev-qt/qtwayland-6.4.3
+>=dev-qt/qtdeclarative-6.4.3
+>=dev-qt/qtshadertools-6.4.3
+media-libs/libdisplay-info ~amd64
+dev-libs/libliftoff ~amd64
+
+games-arcade/oshu ~amd64
+
+games-fps/xonotic ~amd64
