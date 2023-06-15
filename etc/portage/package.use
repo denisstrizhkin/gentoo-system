@@ -2,32 +2,32 @@
 */* CPU_FLAGS_X86: aes avx avx2 f16c fma3 mmx mmxext pclmul popcnt rdrand sha sse sse2 sse3 sse4_1 sse4_2 sse4a ssse3
 
 # global use flags
-*/* elogind wayland vulkan pulseaudio man 
-*/* -alsa -X -kmod -iconv -nls -ipv6 -bzip2 -lzma -zstd -doc -gtk-doc
+*/* elogind wayland vulkan pulseaudio man
+*/* -handbook -X -doc -gtk-doc -vlc
 
-# sway (X for Xwayland)
-gui-wm/hyprland X
-dev-qt/qtbase eglfs egl opengl
-dev-qt/qtdeclarative opengl
-dev-qt/qtgui eglfs egl
-gui-wm/sway X
-gui-libs/wlroots X x11-backend
-gui-apps/swaybg gdk-pixbuf
-x11-libs/gdk-pixbuf jpeg
+# plasma
+kde-plasma/plasma-meta -browser-integration -crash-handler -crypt -display-manager -legacy-systray -sddm -smart
+kde-apps/* -webengine
+media-fonts/noto cjk
 
-# support for X apps
-media-libs/mesa X
-x11-libs/libdrm video_cards_radeon
+# XWayland
+sys-apps/flatpak X
+media-libs/libglvnd X
+x11-libs/libxkbcommon X
 x11-libs/cairo X
 x11-libs/gtk+ X
+media-libs/libepoxy X
+kde-frameworks/kglobalaccel X
+media-libs/mesa X
+kde-frameworks/kdelibs4support X
+kde-frameworks/knotifications X
+x11-libs/libdrm video_cards_radeon
 
-# wayland screencast
-sys-apps/xdg-desktop-portal screencast
+# elisa
+dev-qt/qtmultimedia gstreamer
 
 # gimp
 media-gfx/gimp webp
-app-text/poppler cairo
-media-libs/gegl cairo
 
 # cube for vulkan test
 dev-util/vulkan-tools cube
@@ -40,13 +40,10 @@ media-sound/pulseaudio -daemon
 dev-lang/python pgo lto
 
 # mpv
-media-video/mpv pipewire -xv -pulseaudio iconv cli
+media-video/mpv iconv cli -opengl -xv
 
 # mpd
 media-sound/mpd doc pipewire flac opus -pulseaudio -audiofile
-
-# imv enabled image formats
-media-gfx/imv gif jpeg png
 
 # remmina
 net-misc/remmina rdp
@@ -59,42 +56,29 @@ app-emulation/libvirt pcap numa fuse policykit
 app-emulation/virt-manager gui
 net-dns/dnsmasq ipv6 script
 app-emulation/qemu spice pulseaudio usb usbredir
-net-misc/spice-gtk gtk3 usbredir
+net-misc/spice-gtk usbredir
 
 # minetest
 games-action/minetest -server
-
-# oshu
-media-libs/libsdl2 gles2 opengl
-media-libs/sdl2-image jpeg
 
 # kernel
 sys-kernel/gentoo-kernel savedconfig
 
 # monero
 net-dns/unbound threads
-dev-libs/boost nls
 
 # latex
 app-text/texlive extra xetex context L10N: en ru el
 app-text/texlive-core xetex
 
-# ???
-app-text/xmlto text
-media-libs/harfbuzz icu
-app-text/ghostscript-gpl cups
-
 # networkmanager
-net-misc/networkmanager iwd -modemmanager -ppp -wext
+net-misc/networkmanager iwd
 
 # systemd boot
 sys-apps/systemd-utils boot
 
 # openrc-init
 sys-apps/openrc sysv-utils
-
-# vim minimal
-app-editors/vim -* minimal
 
 # imagemagick
 media-gfx/imagemagick heif jpeg
@@ -106,4 +90,6 @@ media-libs/libheif x265
 
 # libreoffice
 app-office/libreoffice-l10n L10N: en ru 
-dev-libs/xmlsec nss
+
+# portage file list
+sys-apps/util-linux caps
