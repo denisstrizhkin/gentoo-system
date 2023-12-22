@@ -1,7 +1,11 @@
-COMMON_FLAGS="-O3 -pipe -march=native"
+{{ if eq .chezmoi.hostname "denis-laptop" -}}
+COMMON_FLAGS="-O2 -pipe -march=native"
+{{ else -}}
+COMMON_FLAGS="-O3 -pipe -march=native -flto"
+{{ end }}
 
-CFLAGS="${COMMON_FLAGS} -flto"
-CXXFLAGS="${COMMON_FLAGS} -flto"
+CFLAGS="${COMMON_FLAGS}"
+CXXFLAGS="${COMMON_FLAGS}"
 FCFLAGS="${COMMON_FLAGS}"
 FFLAGS="${COMMON_FLAGS}"
 
