@@ -1,0 +1,4 @@
+COMMON_FLAGS="-O3 -pipe -march=native -flto=thin"
+
+CFLAGS="${COMMON_FLAGS}"
+CXXFLAGS="${COMMON_FLAGS}"

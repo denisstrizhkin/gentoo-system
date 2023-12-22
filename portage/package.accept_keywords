@@ -1,0 +1,4 @@
+gui-wm/hyprland **
+gui-libs/xdg-desktop-portal-hyprland **
+media-sound/cmus **
+app-containers/distrobox **

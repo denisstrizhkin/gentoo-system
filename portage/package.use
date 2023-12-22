@@ -1,0 +1,130 @@
+# Global
+*/* lto wayland vulkan pipewire pulseaudio screencast desktop-portal
+*/* -man -doc -gtk-doc -telemetry -alsa -X -bluetooth
+*/* -handbook
+*/* firewalld nftables -iptables
+
+# Rust
+dev-lang/rust system-llvm rust-analyzer rustfmt rust-src system-bootstrap
+
+# Make top look cool
+sys-process/procps modern-top
+
+# Fix fastfetch seg fault
+app-misc/fastfetch pci
+
+# nftables
+net-firewall/nftables json python
+
+# Hyperland (XWayland)
+gui-wm/hyprland X
+media-libs/libepoxy X
+media-libs/libglvnd X
+media-libs/mesa X
+x11-libs/libdrm video_cards_radeon
+x11-libs/gtk+ X
+x11-libs/cairo X
+x11-libs/libxkbcommon X
+
+# LibreOffice
+app-office/libreoffice-l10n L10N: ru en
+app-text/hunspell L10N: ru en
+dev-libs/xmlsec nss
+media-libs/harfbuzz icu
+ 
+# Noto fonts for maximum characters support
+media-fonts/noto cjk
+
+# Flatpak
+sys-apps/flatpak X
+
+# MPV 
+media-video/mpv cli
+
+# imv
+media-gfx/imv gif jpeg png heif svg
+media-libs/freeimage webp
+
+# OpenCV
+media-libs/opencv ffmpeg
+
+# FFMPEG
+media-video/ffmpeg vpx
+
+# weasyprint
+dev-python/pillow jpeg2k
+
+# GraphicsMagick
+media-gfx/graphicsmagick png svg webp jpeg
+
+# cmus
+media-sound/cmus opus mp4 aac ffmpeg
+
+# Remmina
+net-misc/remmina vnc
+dev-libs/libdbusmenu gtk3
+
+# transmission
+net-p2p/transmission cli
+
+# qemu virt-manager
+sys-apps/dbus X
+net-libs/gnutls pkcs11 tools
+app-emulation/libvirt pcap numa fuse virt-network
+app-emulation/virt-manager gui
+app-emulation/qemu spice usb usbredir
+net-misc/spice-gtk usbredir
+
+# qemu user chroot
+app-emulation/qemu static-user
+dev-libs/glib static-libs
+sys-libs/zlib static-libs
+sys-apps/attr static-libs
+dev-libs/libpcre2 static-libs
+
+# Firmware
+sys-kernel/linux-firmware compress-zstd
+
+# Kernel
+# sys-kernel/gentoo-kernel savedconfig
+
+# NetworkManager
+net-misc/networkmanager iwd wifi -lto -wext -ppp -modemmanager
+
+# Pipewire
+media-sound/pulseaudio -daemon
+media-video/pipewire sound-server
+
+# Required by www-client/firefox-118.0.2::gentoo[system-libvpx]
+media-libs/libvpx postproc
+
+# Required by app-portage/pfl-3.2.1::gentoo[network-cron]
+sys-apps/util-linux caps
+
+# required by net-print/cups-filters-1.28.17-r2::gentoo[postscript]
+app-text/ghostscript-gpl cups
+
+# app-admin/pass
+media-gfx/qrencode png
+
+# aspell
+app-text/aspell L10N: en ru
+
+# Plasma
+dev-qt/qtgui X dbus egl
+>=kde-plasma/kwin-5.27.10 lock                                                                             
+>=app-text/xmlto-0.0.28-r11 text 
+media-libs/libcanberra alsa
+media-libs/phonon -vlc
+>=kde-frameworks/kwindowsystem-5.112.0 X
+>=kde-frameworks/sonnet-5.112.0 qml
+>=dev-qt/qtgui-5.15.11-r2 jpeg accessibility
+>=kde-frameworks/prison-5.112.0 qml
+>=sys-apps/systemd-255-r1 policykit
+>=kde-frameworks/kconfig-5.112.0 qml dbus
+>=kde-frameworks/kglobalaccel-5.112.0 X
+>=kde-frameworks/kitemmodels-5.112.0 qml
+>=dev-qt/qtcore-5.15.11-r1 icu
+>=dev-qt/qtprintsupport-5.15.11 cups
+>=kde-frameworks/kcoreaddons-5.112.0 dbus
+>=dev-qt/qtmultimedia-5.15.11:5 qml

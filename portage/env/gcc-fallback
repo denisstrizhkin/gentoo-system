@@ -1,0 +1,12 @@
+CC="gcc"
+CXX="g++"
+CPP="cpp"
+
+AR="${CHOST}-ar"
+NM="${CHOST}-nm"
+RANLIB="${CHOST}-ranlib"
+
+COMMON_FLAGS="-O2 -march=native"
+CFLAGS="${COMMON_FLAGS}"
+CXXFLAGS="${COMMON_FLAGS}"
+LDFLAGS="-Wl,--as-needed"
