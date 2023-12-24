@@ -7,3 +7,4 @@ kde-plasma/kscreen
 kde-plasma/plasma-desktop
 kde-plasma/systemsettings
 kde-plasma/xdg-desktop-portal-kde
+sys-apps/xdg-desktop-portal-gtk
