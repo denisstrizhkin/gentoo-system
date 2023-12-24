@@ -1,8 +1,14 @@
 # Global
-*/* lto wayland vulkan pipewire pulseaudio screencast desktop-portal
+*/* wayland vulkan pipewire pulseaudio screencast
 */* -man -doc -gtk-doc -telemetry -alsa -X -bluetooth
 */* -handbook
 */* firewalld nftables -iptables
+
+{{ if eq .chezmoi.hostname "denis-laptop" }}
+*/* -lto
+{{ else }}
+*/* lto
+{{ end }}
 
 # Rust
 dev-lang/rust system-llvm rust-analyzer rustfmt rust-src system-bootstrap
@@ -68,6 +74,7 @@ dev-libs/libdbusmenu gtk3
 net-p2p/transmission cli
 
 # qemu virt-manager
+net-dns/dnsmasq script
 sys-apps/dbus X
 net-libs/gnutls pkcs11 tools
 app-emulation/libvirt pcap numa fuse virt-network
