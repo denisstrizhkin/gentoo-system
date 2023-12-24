@@ -4,11 +4,11 @@ app-portage/cpuid2cpuflags
 app-portage/eix
 app-portage/gentoolkit
 app-portage/pfl
+app-portage/pycargoebuild
 app-portage/smart-live-rebuild
 app-shells/bash-completion
 app-text/ansifilter
 app-text/wgetpaste
+dev-util/cargo-ebuild
 dev-util/pkgdev
 dev-vcs/git
-dev-util/cargo-ebuild
-app-portage/pycargoebuild

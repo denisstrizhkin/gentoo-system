@@ -1,5 +1,7 @@
+app-admin/chezmoi
 app-admin/stow
 app-admin/sudo
+app-arch/p7zip
 app-arch/unrar
 app-editors/helix
 app-misc/fastfetch
@@ -20,7 +22,5 @@ sys-fs/btrfs-progs
 sys-kernel/dracut
 sys-kernel/gentoo-kernel
 sys-kernel/linux-firmware
-www-client/links
-app-arch/p7zip
-app-admin/chezmoi
 sys-libs/libomp
+www-client/links

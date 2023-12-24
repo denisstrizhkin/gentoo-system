@@ -1,8 +1,8 @@
-dev-python/podman-compose
-app-emulation/virt-manager
+app-containers/aardvark-dns
+app-containers/distrobox
+app-containers/netavark
+app-containers/podman
 app-emulation/libvirt
 app-emulation/qemu
-app-containers/distrobox
-app-containers/podman
-app-containers/aardvark-dns
-app-containers/netavark
+app-emulation/virt-manager
+dev-python/podman-compose
