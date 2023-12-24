@@ -2,5 +2,7 @@ app-office/libreoffice
 app-text/hunspell
 app-text/pandoc
 app-text/qpdf
+app-text/zathura
 app-text/zathura-djvu
+app-text/zathura-pdf-mupdf
 dev-python/weasyprint

@@ -5,6 +5,7 @@ app-arch/p7zip
 app-arch/unrar
 app-editors/helix
 app-misc/fastfetch
+app-misc/screen
 app-shells/gentoo-zsh-completions
 app-shells/zsh
 app-shells/zsh-completions
@@ -12,8 +13,8 @@ dev-lang/rust
 dev-python/virtualenv
 dev-util/android-tools
 net-firewall/firewalld
-net-irc/irssi
 net-misc/networkmanager
+net-misc/socat
 net-p2p/transmission
 net-print/cups
 sys-apps/zram-generator
