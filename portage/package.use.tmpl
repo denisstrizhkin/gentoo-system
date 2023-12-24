@@ -22,10 +22,29 @@ app-misc/fastfetch pci
 # nftables
 net-firewall/nftables json python
 
-# Hyperland (XWayland)
-gui-wm/hyprland X
+# KDE
+kde-plasma/kwin lock                                                                             
+app-text/xmlto text 
+media-libs/libcanberra alsa
+media-libs/phonon -vlc
+dev-qt/qtgui jpeg accessibility
+sys-apps/systemd policykit
+dev-qt/qtcore icu
+dev-qt/qtprintsupport cups
+kde-frameworks/kcoreaddons dbus
+
+# KDE qml
+kde-frameworks/kconfig qml dbus
+dev-qt/qtmultimedia qml
+kde-frameworks/kitemmodels qml
+kde-frameworks/sonnet qml
+kde-frameworks/prison qml
+
+# KDE X
+dev-qt/qtgui X dbus egl
+kde-frameworks/kglobalaccel X
+kde-frameworks/kwindowsystem X
 media-libs/libepoxy X
-media-libs/libglvnd X
 media-libs/mesa X
 x11-libs/libdrm video_cards_radeon
 x11-libs/gtk+ X
@@ -117,21 +136,3 @@ media-gfx/qrencode png
 # aspell
 app-text/aspell L10N: en ru
 
-# Plasma
-dev-qt/qtgui X dbus egl
->=kde-plasma/kwin-5.27.10 lock                                                                             
->=app-text/xmlto-0.0.28-r11 text 
-media-libs/libcanberra alsa
-media-libs/phonon -vlc
->=kde-frameworks/kwindowsystem-5.112.0 X
->=kde-frameworks/sonnet-5.112.0 qml
->=dev-qt/qtgui-5.15.11-r2 jpeg accessibility
->=kde-frameworks/prison-5.112.0 qml
->=sys-apps/systemd-255-r1 policykit
->=kde-frameworks/kconfig-5.112.0 qml dbus
->=kde-frameworks/kglobalaccel-5.112.0 X
->=kde-frameworks/kitemmodels-5.112.0 qml
->=dev-qt/qtcore-5.15.11-r1 icu
->=dev-qt/qtprintsupport-5.15.11 cups
->=kde-frameworks/kcoreaddons-5.112.0 dbus
->=dev-qt/qtmultimedia-5.15.11:5 qml

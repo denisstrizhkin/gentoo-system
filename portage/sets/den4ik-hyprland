@@ -1,19 +1,12 @@
-app-emulation/virt-manager
 app-misc/zellij
 app-text/zathura
 app-text/zathura-pdf-mupdf
 gui-apps/foot
-gui-apps/grim
-gui-apps/hyprpaper
-gui-apps/slurp
 gui-apps/wl-clipboard
-gui-apps/wofi
-gui-wm/hyprland
 media-fonts/noto
 media-fonts/terminus-font
 media-gfx/graphicsmagick
 media-gfx/imv
-media-libs/libsixel
 media-sound/cmus
 media-sound/pulsemixer
 media-video/pipewire
@@ -21,4 +14,3 @@ net-misc/remmina
 net-misc/ytfzf
 sys-apps/flatpak
 www-client/firefox
-x11-misc/xdg-user-dirs

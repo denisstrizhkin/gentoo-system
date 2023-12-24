@@ -10,3 +10,5 @@ app-text/ansifilter
 app-text/wgetpaste
 dev-util/pkgdev
 dev-vcs/git
+dev-util/cargo-ebuild
+app-portage/pycargoebuild
