@@ -13,8 +13,18 @@
 # Rust
 dev-lang/rust system-llvm rust-analyzer rustfmt rust-src system-bootstrap
 
+# Python
+dev-python/python-lsp-server all-plugins
+
+# Matplotlib
+dev-python/pillow webp
+virtual/imagemagick-tools tiff jpeg
+
 # Make top look cool
 sys-process/procps modern-top
+
+# Pinentry QT
+app-crypt/pinentry qt5
 
 # Fix fastfetch seg fault
 app-misc/fastfetch pci
@@ -22,15 +32,20 @@ app-misc/fastfetch pci
 # nftables
 net-firewall/nftables json python
 
+# Vulkan-Tools
+dev-util/vulkan-tools cube
+
 # KDE
-# kde-plasma/kwin lock                                                                             
+kde-plasma/plasma-desktop -kaccounts
+kde-plasma/powerdevil brightness-control
+kde-plasma/kwin lock                                                                             
 app-text/xmlto text 
 media-libs/libcanberra alsa
 media-libs/phonon -vlc
 dev-qt/qtgui jpeg accessibility
 sys-apps/systemd policykit
 dev-qt/qtcore icu
-# dev-qt/qtprintsupport cups
+dev-qt/qtprintsupport cups
 kde-frameworks/kcoreaddons dbus
 
 # KDE qml
@@ -45,6 +60,7 @@ dev-qt/qtgui X dbus egl
 kde-frameworks/kglobalaccel X
 kde-frameworks/kwindowsystem X
 media-libs/libepoxy X
+media-libs/libglvnd X
 media-libs/mesa X
 x11-libs/libdrm video_cards_radeon
 x11-libs/gtk+ X
@@ -79,8 +95,8 @@ media-video/ffmpeg vpx
 # weasyprint
 dev-python/pillow jpeg2k
 
-# GraphicsMagick
-media-gfx/graphicsmagick png svg webp jpeg
+# ImageMagick
+media-gfx/imagemagick jpeg png svg tiff webp xml
 
 # cmus
 media-sound/cmus opus mp4 aac ffmpeg
@@ -98,7 +114,7 @@ sys-apps/dbus X
 net-libs/gnutls pkcs11 tools
 app-emulation/libvirt pcap numa fuse virt-network
 app-emulation/virt-manager gui
-app-emulation/qemu spice usb usbredir
+app-emulation/qemu spice usb usbredir virgl opengl virtfs
 net-misc/spice-gtk usbredir
 
 # qemu user chroot

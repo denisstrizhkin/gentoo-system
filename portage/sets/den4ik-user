@@ -4,7 +4,7 @@ gui-apps/foot
 gui-apps/wl-clipboard
 media-fonts/noto
 media-fonts/terminus-font
-media-gfx/graphicsmagick
+media-gfx/imagemagick
 media-gfx/imv
 media-libs/opencv
 media-sound/cmus

@@ -1,0 +1,5 @@
+dev-python/black
+dev-python/matplotlib
+dev-python/mypy
+dev-python/python-lsp-server
+dev-python/virtuaenv
