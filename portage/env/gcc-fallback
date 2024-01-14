@@ -1,6 +1,6 @@
 CC="gcc"
 CXX="g++"
-CPP="cpp"
+CPP="gcc -E"
 
 AR="${CHOST}-ar"
 NM="${CHOST}-nm"

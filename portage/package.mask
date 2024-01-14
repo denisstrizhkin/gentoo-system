@@ -1,2 +1,2 @@
-=media-libs/vips-8.15.1
+# =media-libs/vips-8.15.1
 media-video/vlc

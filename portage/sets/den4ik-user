@@ -10,6 +10,7 @@ media-libs/opencv
 media-sound/cmus
 media-sound/pulsemixer
 media-video/pipewire
+net-im/nheko
 net-irc/weechat
 net-misc/remmina
 net-misc/ytfzf

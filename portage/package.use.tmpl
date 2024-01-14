@@ -1,8 +1,12 @@
 # Global
 */* wayland vulkan pipewire pulseaudio screencast
 */* -man -doc -gtk-doc -telemetry -alsa -X -bluetooth
-*/* -handbook
+*/* qml -semantic-desktop -handbook
 */* firewalld nftables -iptables
+*/* ios
+*/* png jpeg svg webp gif heif tiff jpeg2k
+*/* opus ogg flac
+*/* vpx
 
 {{ if eq .chezmoi.hostname "denis-laptop" }}
 */* -lto
@@ -15,10 +19,6 @@ dev-lang/rust system-llvm rust-analyzer rustfmt rust-src system-bootstrap
 
 # Python
 dev-python/python-lsp-server all-plugins
-
-# Matplotlib
-dev-python/pillow webp
-virtual/imagemagick-tools tiff jpeg
 
 # Make top look cool
 sys-process/procps modern-top
@@ -35,6 +35,16 @@ net-firewall/nftables json python
 # Vulkan-Tools
 dev-util/vulkan-tools cube
 
+# heif
+media-libs/libheif x265
+
+# KeePassXC
+app-admin/keepassxc keeshare
+sys-libs/zlib minizip
+
+# nheko
+net-im/nheko video voip
+
 # KDE
 kde-plasma/plasma-desktop -kaccounts
 kde-plasma/powerdevil brightness-control
@@ -42,18 +52,12 @@ kde-plasma/kwin lock
 app-text/xmlto text 
 media-libs/libcanberra alsa
 media-libs/phonon -vlc
-dev-qt/qtgui jpeg accessibility
+dev-qt/qtgui eglfs accessibility
 sys-apps/systemd policykit
 dev-qt/qtcore icu
 dev-qt/qtprintsupport cups
 kde-frameworks/kcoreaddons dbus
-
-# KDE qml
-kde-frameworks/kconfig qml dbus
-dev-qt/qtmultimedia qml
-kde-frameworks/kitemmodels qml
-kde-frameworks/sonnet qml
-kde-frameworks/prison qml
+kde-frameworks/kconfig dbus
 
 # KDE X
 dev-qt/qtgui X dbus egl
@@ -82,24 +86,17 @@ sys-apps/flatpak X
 # MPV 
 media-video/mpv cli
 
-# imv
-media-gfx/imv gif jpeg png heif svg
-media-libs/freeimage webp
-
 # OpenCV
 media-libs/opencv ffmpeg
 
 # FFMPEG
 media-video/ffmpeg vpx
 
-# weasyprint
-dev-python/pillow jpeg2k
-
 # ImageMagick
-media-gfx/imagemagick jpeg png svg tiff webp xml
+media-gfx/imagemagick xml
 
 # cmus
-media-sound/cmus opus mp4 aac ffmpeg
+media-sound/cmus mp4 aac ffmpeg
 
 # Remmina
 net-misc/remmina vnc
@@ -145,9 +142,6 @@ sys-apps/util-linux caps
 
 # required by net-print/cups-filters-1.28.17-r2::gentoo[postscript]
 app-text/ghostscript-gpl cups
-
-# app-admin/pass
-media-gfx/qrencode png
 
 # aspell
 app-text/aspell L10N: en ru
