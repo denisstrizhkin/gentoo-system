@@ -14,6 +14,10 @@
 */* lto
 {{ end }}
 
+# Kernel install
+sys-apps/systemd -kernel-install
+sys-kernel/installkernel -systemd
+
 # Rust
 dev-lang/rust system-llvm rust-analyzer rustfmt rust-src system-bootstrap
 
@@ -44,6 +48,11 @@ sys-libs/zlib minizip
 
 # nheko
 net-im/nheko video voip
+
+# Qt6
+>=dev-qt/qtbase-6.6.1-r3 opengl
+>=dev-qt/qtdeclarative-6.6.1 opengl
+>=dev-qt/qttools-6.6.1 opengl
 
 # KDE
 kde-plasma/plasma-desktop -kaccounts
