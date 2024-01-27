@@ -5,12 +5,16 @@ COMMON_FLAGS="-O2 -pipe -march=native"
 CFLAGS="${COMMON_FLAGS}"
 CXXFLAGS="${COMMON_FLAGS}"
 
+MAKEOPTS="-j4"
+
 {{ else -}}
 
 COMMON_FLAGS="-O3 -pipe -march=native"
 
 CFLAGS="${COMMON_FLAGS} -flto"
 CXXFLAGS="${COMMON_FLAGS} -flto"
+
+MAKEOPTS="-j6"
 
 {{ end -}}
 
@@ -21,15 +25,9 @@ RUSTFLAGS="-C opt-level=3 -C target-cpu=native"
 
 CPU_FLAGS_X86="aes avx avx2 f16c fma3 mmx mmxext pclmul popcnt rdrand sha sse sse2 sse3 sse4_1 sse4_2 sse4a ssse3"
 
-{{ if eq .chezmoi.hostname "denis-laptop" -}}
-MAKEOPTS="-j4"
-{{ else -}}
-MAKEOPTS="-j6"
-{{ end }}
-
 VIDEO_CARDS="amdgpu radeonsi"
 
-ACCEPT_KEYWORDS="-* amd64 ~amd64"
+ACCEPT_KEYWORDS="~amd64"
 ACCEPT_LICENSE="-* @FREE"
 
 BINPKG_COMPRESS="zstd"
