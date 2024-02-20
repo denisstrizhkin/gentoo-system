@@ -1,6 +1,7 @@
 # Global
 */* wayland vulkan pipewire pulseaudio screencast
-*/* -man -doc -gtk-doc -telemetry -alsa -X -bluetooth
+*/* dist-kernel bluetooth usb dbus policykit
+*/* -man -doc -gtk-doc -telemetry -alsa -X
 */* qml -semantic-desktop -handbook
 */* firewalld nftables -iptables
 */* ios
@@ -19,7 +20,7 @@ dev-cpp/eigen boost
 
 # Kernel install
 sys-apps/systemd -kernel-install
-sys-kernel/installkernel -systemd
+sys-kernel/installkernel dracut -systemd
 
 # Rust
 dev-lang/rust system-llvm rust-analyzer rustfmt rust-src system-bootstrap
@@ -68,11 +69,9 @@ dev-qt/qtgui eglfs accessibility
 sys-apps/systemd policykit
 dev-qt/qtcore icu
 dev-qt/qtprintsupport cups
-kde-frameworks/kcoreaddons dbus
-kde-frameworks/kconfig dbus
 
 # KDE X
-dev-qt/qtgui X dbus egl
+dev-qt/qtgui X egl
 kde-frameworks/kglobalaccel X
 kde-frameworks/kwindowsystem X
 media-libs/libepoxy X
@@ -88,6 +87,9 @@ app-office/libreoffice-l10n L10N: ru en
 app-text/hunspell L10N: ru en
 dev-libs/xmlsec nss
 media-libs/harfbuzz icu
+
+# Skanlite
+app-text/poppler cairo
  
 # Noto fonts for maximum characters support
 media-fonts/noto cjk
@@ -140,7 +142,7 @@ sys-kernel/linux-firmware compress-zstd
 # sys-kernel/gentoo-kernel savedconfig
 
 # NetworkManager
-net-misc/networkmanager iwd wifi -lto -wext -ppp -modemmanager
+net-misc/networkmanager iwd wifi -lto -wext -ppp
 
 # Pipewire
 media-sound/pulseaudio -daemon
