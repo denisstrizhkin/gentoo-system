@@ -1,11 +1,11 @@
 # Global
 */* wayland vulkan pipewire pulseaudio screencast
-*/* dist-kernel bluetooth usb dbus policykit
-*/* -man -doc -gtk-doc -telemetry -alsa -X
-*/* qml -semantic-desktop -handbook
+*/* dist-kernel bluetooth
+*/* -man -doc -gtk-doc -telemetry -alsa
+*/* -kwallet -semantic-desktop -handbook
 */* firewalld nftables -iptables
 */* ios
-*/* png jpeg svg webp gif heif tiff jpeg2k
+*/* webp gif heif tiff jpeg2k
 */* opus ogg flac
 */* vpx
 
@@ -31,9 +31,6 @@ dev-python/python-lsp-server all-plugins
 # Make top look cool
 sys-process/procps modern-top
 
-# Pinentry QT
-app-crypt/pinentry qt5
-
 # Fix fastfetch seg fault
 app-misc/fastfetch pci
 
@@ -53,49 +50,27 @@ sys-libs/zlib minizip
 # nheko
 net-im/nheko video voip
 
-# Qt6
->=dev-qt/qtbase-6.6.1-r3 opengl
->=dev-qt/qtdeclarative-6.6.1 opengl
->=dev-qt/qttools-6.6.1 opengl
-
 # KDE
+kde-plasma/plasma-meta -crash-handler -browser-integration  -display-manager -legacy-systray -smart
 kde-plasma/plasma-desktop -kaccounts
+kde-plasma/plasma-firewall -ufw
+kde-plasma/plasma-nm openconnect
 kde-plasma/powerdevil brightness-control
-kde-plasma/kwin lock                                                                             
 app-text/xmlto text 
 media-libs/libcanberra alsa
 media-libs/phonon -vlc
+dev-qt/qtgui egl
 dev-qt/qtgui eglfs accessibility
-sys-apps/systemd policykit
-dev-qt/qtcore icu
-dev-qt/qtprintsupport cups
-
-# KDE X
-dev-qt/qtgui X egl
-kde-frameworks/kglobalaccel X
-kde-frameworks/kwindowsystem X
-media-libs/libepoxy X
-media-libs/libglvnd X
-media-libs/mesa X
-x11-libs/libdrm video_cards_radeon
-x11-libs/gtk+ X
-x11-libs/cairo X
-x11-libs/libxkbcommon X
+x11-libs/wxGTK gstreamer
 
 # LibreOffice
-app-office/libreoffice-l10n L10N: ru en
-app-text/hunspell L10N: ru en
 dev-libs/xmlsec nss
-media-libs/harfbuzz icu
 
 # Skanlite
 app-text/poppler cairo
  
 # Noto fonts for maximum characters support
 media-fonts/noto cjk
-
-# Flatpak
-sys-apps/flatpak X
 
 # MPV 
 media-video/mpv cli
@@ -105,9 +80,6 @@ media-libs/opencv ffmpeg
 
 # FFMPEG
 media-video/ffmpeg vpx
-
-# ImageMagick
-media-gfx/imagemagick xml
 
 # cmus
 media-sound/cmus mp4 aac ffmpeg
@@ -121,11 +93,10 @@ net-p2p/transmission cli
 
 # qemu virt-manager
 net-dns/dnsmasq script
-sys-apps/dbus X
 net-libs/gnutls pkcs11 tools
 app-emulation/libvirt pcap numa fuse virt-network
 app-emulation/virt-manager gui
-app-emulation/qemu spice usb usbredir virgl opengl virtfs
+app-emulation/qemu spice usbredir virgl virtfs
 net-misc/spice-gtk usbredir
 
 # qemu user chroot
@@ -153,10 +124,3 @@ media-libs/libvpx postproc
 
 # Required by app-portage/pfl-3.2.1::gentoo[network-cron]
 sys-apps/util-linux caps
-
-# required by net-print/cups-filters-1.28.17-r2::gentoo[postscript]
-app-text/ghostscript-gpl cups
-
-# aspell
-app-text/aspell L10N: en ru
-

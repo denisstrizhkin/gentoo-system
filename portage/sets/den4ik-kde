@@ -2,11 +2,6 @@ kde-apps/dolphin
 kde-apps/gwenview
 kde-apps/spectacle
 kde-misc/kdeconnect
-kde-plasma/breeze-gtk
-kde-plasma/kde-gtk-config
-kde-plasma/kscreen
-kde-plasma/plasma-desktop
-kde-plasma/powerdevil
-kde-plasma/systemsettings
-kde-plasma/xdg-desktop-portal-kde
+kde-misc/skanlite
+kde-plasma/plasma-meta
 sys-apps/xdg-desktop-portal-gtk
