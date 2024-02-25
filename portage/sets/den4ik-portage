@@ -3,10 +3,10 @@ app-eselect/eselect-repository
 app-portage/cpuid2cpuflags
 app-portage/eix
 app-portage/gentoolkit
+app-portage/mirrorselect
 app-portage/pfl
 app-portage/pycargoebuild
 app-portage/smart-live-rebuild
-app-shells/bash-completion
 app-text/ansifilter
 app-text/wgetpaste
 dev-util/cargo-ebuild

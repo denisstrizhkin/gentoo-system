@@ -4,10 +4,13 @@ app-admin/sudo
 app-arch/p7zip
 app-arch/unrar
 app-editors/helix
+app-editors/neovim
 app-misc/fastfetch
 app-misc/screen
+app-shells/bash-completion
 app-shells/gentoo-zsh-completions
 app-shells/zsh
+app-shells/zsh-autocomplete
 app-shells/zsh-completions
 app-shells/zsh-syntax-highlighting
 dev-lang/rust
@@ -18,6 +21,7 @@ net-misc/networkmanager
 net-misc/socat
 net-p2p/transmission
 net-print/cups
+net-proxy/sshuttle
 net-vpn/wireguard-tools
 sys-apps/usbutils
 sys-apps/zram-generator

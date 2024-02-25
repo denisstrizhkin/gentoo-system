@@ -7,4 +7,3 @@ app-emulation/qemu
 app-emulation/virtiofsd
 app-emulation/virt-manager
 dev-python/podman-compose
-media-plugins/gst-plugins-pulse
