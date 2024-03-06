@@ -1,11 +1,9 @@
- 
 app-admin/keepassxc
 app-editors/emacs
 app-misc/ani-cli
 app-misc/zellij
 app-text/htmltidy
 dev-util/shellcheck
-games-engines/minetest
 gui-apps/wl-clipboard
 media-gfx/imagemagick
 media-gfx/imv

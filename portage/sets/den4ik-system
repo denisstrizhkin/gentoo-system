@@ -3,17 +3,15 @@ app-admin/stow
 app-admin/sudo
 app-arch/p7zip
 app-arch/unrar
-app-editors/helix
 app-editors/neovim
 app-misc/fastfetch
 app-misc/screen
 app-shells/bash-completion
 app-shells/gentoo-zsh-completions
 app-shells/zsh
-app-shells/zsh-autocomplete
 app-shells/zsh-completions
 app-shells/zsh-syntax-highlighting
-dev-lang/rust
+dev-lang/rust-bin
 dev-util/android-tools
 dev-util/vulkan-tools
 net-firewall/firewalld
@@ -28,7 +26,7 @@ sys-apps/zram-generator
 sys-boot/efibootmgr
 sys-fs/btrfs-progs
 sys-kernel/dracut
-sys-kernel/gentoo-kernel
+sys-kernel/gentoo-kernel-bin
 sys-kernel/linux-firmware
 sys-libs/libomp
 www-client/links

@@ -1,10 +1,8 @@
 # Global
 */* wayland vulkan pipewire pulseaudio screencast
 */* dist-kernel bluetooth
-*/* -man -doc -gtk-doc -telemetry -alsa
-*/* -kwallet -semantic-desktop -handbook
+*/* -doc -gtk-doc -telemetry
 */* firewalld nftables -iptables
-*/* ios
 */* webp gif heif tiff jpeg2k
 */* opus ogg flac
 */* vpx
@@ -15,6 +13,10 @@
 */* lto
 {{ end }}
 
+# GCC
+sys-devel/gcc -lto
+sys-libs/glibc -crypt
+
 # eigen
 dev-cpp/eigen boost
 
@@ -23,7 +25,7 @@ sys-apps/systemd -kernel-install
 sys-kernel/installkernel dracut -systemd
 
 # Rust
-dev-lang/rust system-llvm rust-analyzer rustfmt rust-src system-bootstrap
+dev-lang/rust-bin rust-analyzer rustfmt rust-src
 
 # Python
 dev-python/python-lsp-server all-plugins
@@ -61,8 +63,7 @@ app-i18n/fcitx-configtool kcm
 app-i18n/fcitx-qt qt6
 
 # KDE
-kde-plasma/plasma-meta -crash-handler -browser-integration  -display-manager -legacy-systray -smart
-kde-plasma/plasma-desktop -kaccounts
+kde-plasma/plasma-meta -crash-handler -browser-integration -display-manager -legacy-systray -smart
 kde-plasma/plasma-firewall -ufw
 kde-plasma/plasma-nm openconnect
 kde-plasma/powerdevil brightness-control
@@ -72,6 +73,7 @@ media-libs/phonon -vlc
 dev-qt/qtgui egl
 dev-qt/qtgui eglfs accessibility
 x11-libs/wxGTK gstreamer
+x11-libs/libdrm video_cards_radeon
 
 # LibreOffice
 dev-libs/xmlsec nss
@@ -123,7 +125,7 @@ sys-kernel/linux-firmware compress-zstd
 # sys-kernel/gentoo-kernel savedconfig
 
 # NetworkManager
-net-misc/networkmanager iwd wifi -lto -wext -ppp
+net-misc/networkmanager iwd wifi -wext -ppp
 
 # Pipewire
 media-sound/pulseaudio -daemon

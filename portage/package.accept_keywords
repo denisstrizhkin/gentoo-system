@@ -1,3 +1,34 @@
-media-sound/cmus **
 app-containers/distrobox **
 app-misc/ani-cli **
+
+<=sys-libs/glibc-2.39-r1
+sys-libs/libxcrypt
+
+app-misc/zellij
+dev-util/shellcheck
+sci-physics/ovito
+app-admin/chezmoi
+app-editors/helix
+dev-util/cargo-ebuild
+media-fonts/jetbrainsmono-nerdfont
+app-emulation/virtiofsd
+dev-python/podman-compose
+sys-process/nvtop
+sys-boot/efiboot-generator
+www-apps/zola
+
+net-im/nheko
+dev-cpp/blurhash
+dev-libs/mtxclient
+media-plugins/gst-plugins-qt5
+dev-db/lmdb++
+dev-cpp/coeurl
+dev-cpp/cpp-httplib
+dev-libs/spdlog
+
+app-i18n/fcitx-gtk
+app-i18n/fcitx-qt
+app-i18n/fcitx
+app-i18n/fcitx-anthy
+app-i18n/fcitx-configtool
+x11-libs/xcb-imdkit
