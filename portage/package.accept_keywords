@@ -16,6 +16,7 @@ dev-python/podman-compose
 sys-process/nvtop
 sys-boot/efiboot-generator
 www-apps/zola
+app-shells/direnv
 
 net-im/nheko
 dev-cpp/blurhash

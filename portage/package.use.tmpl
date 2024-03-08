@@ -13,12 +13,11 @@
 */* lto
 {{ end }}
 
-# GCC
-sys-devel/gcc -lto
-sys-libs/glibc -crypt
-
 # eigen
 dev-cpp/eigen boost
+
+# libreoffice
+app-office/libreoffice-l10n L10N: -ja 
 
 # Kernel install
 sys-apps/systemd -kernel-install
@@ -26,9 +25,6 @@ sys-kernel/installkernel dracut -systemd
 
 # Rust
 dev-lang/rust-bin rust-analyzer rustfmt rust-src
-
-# Python
-dev-python/python-lsp-server all-plugins
 
 # PHP
 dev-lang/php cli curl gd pcntl
@@ -49,14 +45,15 @@ dev-util/vulkan-tools cube
 media-libs/libheif x265
 
 # KeePassXC
-app-admin/keepassxc keeshare
+app-admin/keepassxc keeshare browser
 sys-libs/zlib minizip
 
 # nheko
 net-im/nheko video voip
 
 # Emacs
-app-editors/emacs dynamic-loading json harfbuzz
+app-editors/emacs dynamic-loading jit json harfbuzz
+sys-devel/gcc jit
 
 # FCITX
 app-i18n/fcitx-configtool kcm
@@ -68,7 +65,6 @@ kde-plasma/plasma-firewall -ufw
 kde-plasma/plasma-nm openconnect
 kde-plasma/powerdevil brightness-control
 app-text/xmlto text 
-media-libs/libcanberra alsa
 media-libs/phonon -vlc
 dev-qt/qtgui egl
 dev-qt/qtgui eglfs accessibility
@@ -84,9 +80,6 @@ app-text/poppler cairo
 # Noto fonts for maximum characters support
 media-fonts/noto cjk
 
-# MPV 
-media-video/mpv cli
-
 # OpenCV
 media-libs/opencv ffmpeg
 
@@ -99,9 +92,6 @@ media-sound/cmus mp4 aac ffmpeg
 # Remmina
 net-misc/remmina vnc
 dev-libs/libdbusmenu gtk3
-
-# transmission
-net-p2p/transmission cli
 
 # qemu virt-manager
 net-dns/dnsmasq script
@@ -118,11 +108,13 @@ sys-libs/zlib static-libs
 sys-apps/attr static-libs
 dev-libs/libpcre2 static-libs
 
+# TeX Live
+app-text/texlive cjk png truetype context extra graphics luatex science xetex
+app-text/texlive L10N: el
+app-text/texlive-core science cjk xetex
+
 # Firmware
 sys-kernel/linux-firmware compress-zstd
-
-# Kernel
-# sys-kernel/gentoo-kernel savedconfig
 
 # NetworkManager
 net-misc/networkmanager iwd wifi -wext -ppp
