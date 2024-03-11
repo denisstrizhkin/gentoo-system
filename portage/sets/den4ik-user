@@ -2,14 +2,16 @@ app-admin/keepassxc
 app-editors/emacs
 app-misc/ani-cli
 app-misc/zellij
+app-shells/direnv
 app-text/htmltidy
 dev-util/shellcheck
 gui-apps/wl-clipboard
+media-gfx/gimp
 media-gfx/imagemagick
-media-gfx/imv
 media-libs/opencv
 media-sound/cmus
 net-im/nheko
+net-im/telegram-desktop
 net-irc/weechat
 net-misc/remmina
 net-misc/ytfzf

@@ -1,5 +1,5 @@
 # Global
-*/* vulkan dist-kernel bluetooth
+*/* vulkan dist-kernel bluetooth lto
 */* -doc -gtk-doc -telemetry
 */* firewalld nftables -iptables
 */* webp gif heif tiff jpeg2k
@@ -7,9 +7,7 @@
 */* vpx
 
 {{ if eq .chezmoi.hostname "denis-laptop" }}
-*/* -lto
 {{ else }}
-*/* lto
 {{ end }}
 
 # eigen
@@ -20,13 +18,10 @@ app-office/libreoffice-l10n L10N: -ja
 
 # Kernel install
 sys-apps/systemd boot ukify
-sys-kernel/installkernel dracut uki ukify
+sys-kernel/installkernel dracut uki ukify systemd-boot
 
 # Rust
 dev-lang/rust-bin rust-analyzer rustfmt rust-src
-
-# PHP
-dev-lang/php cli curl gd pcntl
  
 # Make top look cool
 sys-process/procps modern-top

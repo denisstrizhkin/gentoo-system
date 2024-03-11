@@ -23,12 +23,10 @@ net-proxy/sshuttle
 net-vpn/wireguard-tools
 sys-apps/usbutils
 sys-apps/zram-generator
-sys-boot/efibootmgr
 sys-fs/btrfs-progs
 sys-fs/dosfstools
 sys-kernel/dracut
 sys-kernel/gentoo-kernel-bin
 sys-kernel/linux-firmware
-sys-libs/libomp
 sys-process/nvtop
 www-client/links
