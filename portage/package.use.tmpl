@@ -1,6 +1,5 @@
 # Global
-*/* wayland vulkan pipewire pulseaudio screencast
-*/* dist-kernel bluetooth
+*/* vulkan dist-kernel bluetooth
 */* -doc -gtk-doc -telemetry
 */* firewalld nftables -iptables
 */* webp gif heif tiff jpeg2k
@@ -20,8 +19,8 @@ dev-cpp/eigen boost
 app-office/libreoffice-l10n L10N: -ja 
 
 # Kernel install
-sys-apps/systemd -kernel-install
-sys-kernel/installkernel dracut -systemd
+sys-apps/systemd boot ukify
+sys-kernel/installkernel dracut uki ukify
 
 # Rust
 dev-lang/rust-bin rust-analyzer rustfmt rust-src
