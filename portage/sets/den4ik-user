@@ -19,6 +19,6 @@ sci-physics/ovito
 sys-apps/fd
 sys-apps/flatpak
 sys-apps/ripgrep
-sys-fs/fuse:0
+# sys-fs/fuse:0
 www-client/firefox
 x11-terms/kitty

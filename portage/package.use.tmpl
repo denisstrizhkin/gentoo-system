@@ -13,9 +13,6 @@
 # eigen
 dev-cpp/eigen boost
 
-# libreoffice
-app-office/libreoffice-l10n L10N: -ja 
-
 # Kernel install
 sys-apps/systemd boot cryptsetup ukify
 sys-kernel/installkernel dracut uki ukify systemd-boot
@@ -54,7 +51,7 @@ app-i18n/fcitx-configtool kcm
 app-i18n/fcitx-qt qt6
 
 # KDE
-kde-plasma/plasma-meta -crash-handler -browser-integration -display-manager -legacy-systray -smart
+kde-plasma/plasma-meta -crypt -crash-handler -browser-integration -display-manager -legacy-systray -smart
 kde-plasma/plasma-firewall -ufw
 kde-plasma/plasma-nm openconnect
 kde-plasma/powerdevil brightness-control
@@ -78,7 +75,7 @@ media-fonts/noto cjk
 media-libs/opencv ffmpeg
 
 # FFMPEG
-media-video/ffmpeg vpx
+media-video/ffmpeg vpx libass
 
 # cmus
 media-sound/cmus mp4 aac ffmpeg
@@ -91,7 +88,6 @@ dev-libs/libdbusmenu gtk3
 net-dns/dnsmasq script
 net-libs/gnutls pkcs11 tools
 app-emulation/libvirt pcap numa fuse virt-network
-app-emulation/virt-manager gui
 app-emulation/qemu spice usbredir virgl virtfs
 net-misc/spice-gtk usbredir
 
@@ -115,10 +111,23 @@ net-misc/networkmanager iwd wifi -wext -ppp
 
 # Pipewire
 media-sound/pulseaudio -daemon
-media-video/pipewire sound-server
+media-video/pipewire sound-server pipewire-alsa
 
 # Required by www-client/firefox-118.0.2::gentoo[system-libvpx]
 media-libs/libvpx postproc
 
 # Required by app-portage/pfl-3.2.1::gentoo[network-cron]
 sys-apps/util-linux caps
+
+# xdelta3
+dev-util/xdelta lzma
+
+# PPSSPP
+games-emulation/ppsspp -qt5
+
+# Audacious
+media-sound/audacious ffmpeg
+
+# Audacity
+media-sound/audacity ffmpeg jack
+

@@ -5,6 +5,7 @@ app-misc/ani-cli **
 sys-libs/libxcrypt
 
 app-misc/zellij
+media-sound/helvum
 dev-util/shellcheck
 sci-physics/ovito
 app-admin/chezmoi
@@ -17,6 +18,8 @@ sys-process/nvtop
 sys-boot/efiboot-generator
 www-apps/zola
 app-shells/direnv
+media-video/syncplay
+games-emulation/ppsspp
 
 net-im/nheko
 dev-cpp/blurhash
