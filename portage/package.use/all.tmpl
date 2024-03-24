@@ -1,10 +1,14 @@
 # Global
-*/* vulkan dist-kernel bluetooth
+*/* pulseaudio pipewire
+*/* -wayland vulkan dist-kernel bluetooth
 */* -doc -gtk-doc -telemetry
 */* firewalld nftables -iptables
 */* webp gif heif tiff jpeg2k
 */* opus ogg flac
 */* vpx
+
+# Reduce GUI
+*/* -gui -qt5 -qt6
 
 # Compilation
 */* lto pgo hardened pie
@@ -17,8 +21,7 @@
 dev-cpp/eigen boost
 
 # Kernel install
-sys-apps/systemd boot cryptsetup ukify
-sys-kernel/installkernel dracut uki ukify systemd-boot
+sys-kernel/installkernel dracut
 
 # Rust
 dev-lang/rust-bin rust-analyzer rustfmt rust-src
@@ -46,23 +49,16 @@ sys-libs/zlib minizip
 net-im/nheko video voip
 
 # Emacs
-app-editors/emacs dynamic-loading jit json harfbuzz
+app-editors/emacs gui dynamic-loading jit json harfbuzz
+app-emacs/emacs-common gui
 sys-devel/gcc jit
 
 # FCITX
 app-i18n/fcitx-configtool kcm
-app-i18n/fcitx-qt qt6
+app-i18n/fcitx-qt qt5 qt6
 
-# KDE
-kde-plasma/plasma-meta -crypt -crash-handler -browser-integration -display-manager -legacy-systray -smart
-kde-plasma/plasma-firewall -ufw
-kde-plasma/plasma-nm openconnect
-kde-plasma/powerdevil brightness-control
-app-text/xmlto text 
-media-libs/phonon -vlc
-dev-qt/qtgui egl
-dev-qt/qtgui eglfs accessibility
-x11-libs/wxGTK gstreamer
+# MATE
+mate-base/mate -themes
 x11-libs/libdrm video_cards_radeon
 
 # LibreOffice
@@ -75,7 +71,7 @@ app-text/poppler cairo
 media-fonts/noto cjk
 
 # OpenCV
-media-libs/opencv ffmpeg
+media-libs/opencv ffmpeg -opengl
 
 # FFMPEG
 media-video/ffmpeg vpx libass

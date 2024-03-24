@@ -36,3 +36,9 @@ app-i18n/fcitx
 app-i18n/fcitx-anthy
 app-i18n/fcitx-configtool
 x11-libs/xcb-imdkit
+
+# MATE
+sys-apps/xdg-desktop-portal-xapp
+
+# GTK
+gui-libs/gtk

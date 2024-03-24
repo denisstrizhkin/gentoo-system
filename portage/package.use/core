@@ -1,0 +1,5 @@
+sys-kernel/installkernel dracut
+
+app-admin/doas persist
+
+sys-apps/openrc sysv-utils -netifrc

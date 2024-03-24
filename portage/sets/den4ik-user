@@ -8,10 +8,10 @@ dev-util/shellcheck
 gui-apps/wl-clipboard
 media-gfx/gimp
 media-gfx/imagemagick
-media-libs/opencv
+# media-libs/opencv
 media-sound/cmus
 net-im/nheko
-net-im/telegram-desktop
+# net-im/telegram-desktop
 net-irc/weechat
 net-misc/remmina
 net-misc/ytfzf

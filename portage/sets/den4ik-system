@@ -1,6 +1,6 @@
 app-admin/chezmoi
 app-admin/stow
-app-admin/sudo
+app-admin/doas
 app-arch/p7zip
 app-arch/unrar
 app-editors/neovim
@@ -22,11 +22,12 @@ net-print/cups
 net-proxy/sshuttle
 net-vpn/wireguard-tools
 sys-apps/usbutils
+sys-kernel/installkernel
 sys-apps/zram-generator
 sys-fs/btrfs-progs
 sys-fs/dosfstools
 sys-kernel/dracut
-sys-kernel/gentoo-kernel-bin
+sys-kernel/gentoo-kernel
 sys-kernel/linux-firmware
 sys-process/nvtop
 www-client/links
