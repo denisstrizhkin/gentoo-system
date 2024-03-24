@@ -8,14 +8,25 @@ MAKEOPTS="-j6"
 
 {{ end -}}
 
-COMMON_FLAGS="-O2 -pipe -march=native"
+COMMON_FLAGS="-march=native -O3 -pipe"
 
-CFLAGS="${COMMON_FLAGS}"
-CXXFLAGS="${COMMON_FLAGS}"
+CFLAGS="${COMMON_FLAGS} -flto=thin"
+CXXFLAGS="${COMMON_FLAGS} -flto=thin"
 FCFLAGS="${COMMON_FLAGS}"
 FFLAGS="${COMMON_FLAGS}"
 
-FEATURES="getbinpkg binpkg-request-signature"
+# Use clang as default compiler not gcc
+CC="clang"
+CPP="clang-cpp"
+CXX="clang++"
+AR="llvm-ar"
+NM="llvm-nm"
+RANLIB="llvm-ranlib"
+OBJCOPY="llvm-objcopy"
+OBJDUMP="llvm-objdump"
+LDFLAGS="${LDFLAGS} -fuse-ld=lld -rtlib=compiler-rt -unwindlib=libunwind -Wl,--as-needed"
+
+# FEATURES="getbinpkg binpkg-request-signature"
 
 CPU_FLAGS_X86="aes avx avx2 f16c fma3 mmx mmxext pclmul popcnt rdrand sha sse sse2 sse3 sse4_1 sse4_2 sse4a ssse3"
 

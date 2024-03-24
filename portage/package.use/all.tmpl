@@ -1,10 +1,13 @@
 # Global
-*/* vulkan dist-kernel bluetooth lto
+*/* vulkan dist-kernel bluetooth
 */* -doc -gtk-doc -telemetry
 */* firewalld nftables -iptables
 */* webp gif heif tiff jpeg2k
 */* opus ogg flac
 */* vpx
+
+# Compilation
+*/* lto pgo hardened pie
 
 {{ if eq .chezmoi.hostname "denis-laptop" }}
 {{ else }}
@@ -131,3 +134,5 @@ media-sound/audacious ffmpeg
 # Audacity
 media-sound/audacity ffmpeg jack
 
+# Firefox hardened
+x11-base/xorg-server xvfb

@@ -1,1 +1,1 @@
-../../var/db/repos/gentoo/profiles/default/linux/amd64/23.0/desktop/plasma/systemd
+../../var/db/repos/den4ik/profiles/systemd-plasma-nomultilib-23.0
