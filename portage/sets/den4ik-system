@@ -23,7 +23,6 @@ net-proxy/sshuttle
 net-vpn/wireguard-tools
 sys-apps/usbutils
 sys-kernel/installkernel
-sys-apps/zram-generator
 sys-fs/btrfs-progs
 sys-fs/dosfstools
 sys-kernel/dracut

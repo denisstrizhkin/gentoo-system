@@ -39,6 +39,8 @@ x11-libs/xcb-imdkit
 
 # MATE
 sys-apps/xdg-desktop-portal-xapp
+x11-apps/lightdm-gtk-greeter-settings
 
-# GTK
-gui-libs/gtk
+# Catppuccin
+x11-themes/catppuccin-gtk
+x11-themes/tela-icon-theme

@@ -1,1 +1,3 @@
 media-video/vlc
+net-libs/webkit-gtk
+sys-apps/systemd

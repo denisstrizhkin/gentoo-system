@@ -12,3 +12,6 @@ CFLAGS="${COMMON_FLAGS}"
 CXXFLAGS="${COMMON_FLAGS}"
 
 LDFLAGS="-Wl,--as-needed"
+
+OBJCOPY="objcopy"
+OBJDUMP="objdump"

@@ -1,0 +1,7 @@
+# Themes
+x11-themes/catppuccin-gtk frappe latte
+x11-themes/tela-icon-theme standard black blue brown dracula green grey kde manjaro
+x11-themes/tela-icon-theme nord orange pink purple red ubuntu yellow -kde
+
+# QT
+dev-qt/qtbase gui

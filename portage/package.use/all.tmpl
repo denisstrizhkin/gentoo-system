@@ -1,14 +1,15 @@
-# Global
+# Globaud
 */* pulseaudio pipewire
-*/* -wayland vulkan dist-kernel bluetooth
-*/* -doc -gtk-doc -telemetry
+*/* vulkan dist-kernel bluetooth
+*/* -wayland -egl
+*/* -man -doc -gtk-doc -telemetry
 */* firewalld nftables -iptables
 */* webp gif heif tiff jpeg2k
 */* opus ogg flac
 */* vpx
 
 # Reduce GUI
-*/* -gui -qt5 -qt6
+*/* -gnome -gui -qt5 -qt6
 
 # Compilation
 */* lto pgo hardened pie
@@ -19,9 +20,6 @@
 
 # eigen
 dev-cpp/eigen boost
-
-# Kernel install
-sys-kernel/installkernel dracut
 
 # Rust
 dev-lang/rust-bin rust-analyzer rustfmt rust-src
@@ -59,6 +57,7 @@ app-i18n/fcitx-qt qt5 qt6
 
 # MATE
 mate-base/mate -themes
+x11-wm/marco xinerama
 x11-libs/libdrm video_cards_radeon
 
 # LibreOffice
@@ -89,6 +88,7 @@ net-libs/gnutls pkcs11 tools
 app-emulation/libvirt pcap numa fuse virt-network
 app-emulation/qemu spice usbredir virgl virtfs
 net-misc/spice-gtk usbredir
+app-emulation/virt-manager gui
 
 # qemu user chroot
 app-emulation/qemu static-user
@@ -96,11 +96,6 @@ dev-libs/glib static-libs
 sys-libs/zlib static-libs
 sys-apps/attr static-libs
 dev-libs/libpcre2 static-libs
-
-# TeX Live
-app-text/texlive cjk png truetype context extra graphics luatex science xetex
-app-text/texlive L10N: el
-app-text/texlive-core science cjk xetex
 
 # Firmware
 sys-kernel/linux-firmware compress-zstd
@@ -121,14 +116,11 @@ sys-apps/util-linux caps
 # xdelta3
 dev-util/xdelta lzma
 
-# PPSSPP
-games-emulation/ppsspp -qt5
-
 # Audacious
 media-sound/audacious ffmpeg
 
 # Audacity
-media-sound/audacity ffmpeg jack
+media-sound/audacity ffmpeg
 
 # Firefox hardened
 x11-base/xorg-server xvfb
