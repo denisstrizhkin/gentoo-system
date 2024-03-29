@@ -4,6 +4,6 @@ app-containers/netavark
 app-containers/podman
 app-emulation/libvirt
 app-emulation/qemu
-app-emulation/virtiofsd
 app-emulation/virt-manager
+app-emulation/virtiofsd
 dev-python/podman-compose

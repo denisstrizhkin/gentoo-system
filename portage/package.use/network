@@ -1,1 +1,6 @@
+# Global
+*/* firewalld nftables -iptables
+*/* zeroconf
+
+# Openconnect disable gui
 net-vpn/networkmanager-openconnect -gtk

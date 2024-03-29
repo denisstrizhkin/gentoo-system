@@ -39,8 +39,11 @@ x11-libs/xcb-imdkit
 
 # MATE
 sys-apps/xdg-desktop-portal-xapp
-x11-apps/lightdm-gtk-greeter-settings
+app-misc/nwg-look
+x11-apps/xcur2png
+x11-themes/kvantum
 
 # Catppuccin
 x11-themes/catppuccin-gtk
+x11-themes/catppuccin-cursors
 x11-themes/tela-icon-theme

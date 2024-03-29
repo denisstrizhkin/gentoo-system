@@ -4,7 +4,7 @@ MAKEOPTS="-j4"
 
 {{ else -}}
 
-MAKEOPTS="-j6"
+MAKEOPTS="-j4"
 
 {{ end -}}
 
@@ -25,6 +25,7 @@ RANLIB="llvm-ranlib"
 OBJCOPY="llvm-objcopy"
 OBJDUMP="llvm-objdump"
 LDFLAGS="${LDFLAGS} -fuse-ld=lld -rtlib=compiler-rt -unwindlib=libunwind -Wl,--as-needed"
+# LDFLAGS="${LDFLAGS} --threads 4"
 
 # FEATURES="getbinpkg binpkg-request-signature"
 # EMERGE_DEFAULT_OPTS="-X 'sys-devel/gcc'"
