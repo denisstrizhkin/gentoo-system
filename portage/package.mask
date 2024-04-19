@@ -2,3 +2,4 @@ sys-apps/systemd
 # x11-libs/gtk+:2
 net-libs/webkit-gtk
 media-video/vlc
+app-text/zathura-pdf-poppler

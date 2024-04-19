@@ -2,6 +2,7 @@ media-gfx/feh
 media-gfx/scrot
 x11-apps/xrandr
 x11-base/xorg-server
+x11-misc/picom
 x11-misc/redshift
 x11-misc/rofi
 x11-misc/xclip

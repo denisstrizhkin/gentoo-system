@@ -1,4 +1,9 @@
 sys-kernel/linux-firmware linux-fw-redistributable
 app-arch/unrar unRAR
-media-fonts/corefonts MSttfEULA
 games-emulation/ppsspp JSON
+
+games-puzzle/katawa-shoujo CC-BY-NC-ND-3.0
+
+media-fonts/corefonts MSttfEULA
+media-fonts/font-bh-ttf bh-luxi
+media-fonts/mikachan-font-otf free-noncomm
