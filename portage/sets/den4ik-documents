@@ -1,5 +1,6 @@
 # app-office/libreoffice
 app-text/hunspell
 app-text/qpdf
+app-text/zathura-meta
 dev-python/weasyprint
 virtual/pandoc

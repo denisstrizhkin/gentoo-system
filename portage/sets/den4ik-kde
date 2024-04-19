@@ -5,8 +5,4 @@ kde-apps/spectacle
 kde-misc/kdeconnect
 kde-misc/skanlite
 kde-plasma/plasma-meta
-media-fonts/corefonts
-media-fonts/jetbrainsmono-nerdfont
-media-fonts/noto
-media-video/pipewire
 sys-apps/xdg-desktop-portal-gtk
