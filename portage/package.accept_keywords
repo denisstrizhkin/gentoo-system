@@ -2,7 +2,7 @@ app-containers/distrobox **
 app-misc/ani-cli **
 x11-themes/catppuccin-kvantum **
 
-<=sys-libs/glibc-2.39-r1
+<=sys-libs/glibc-2.39-r3
 sys-libs/libxcrypt
 
 games-util/game-device-udev-rules

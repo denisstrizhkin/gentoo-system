@@ -24,8 +24,8 @@ NM="llvm-nm"
 RANLIB="llvm-ranlib"
 OBJCOPY="llvm-objcopy"
 OBJDUMP="llvm-objdump"
-LDFLAGS="${LDFLAGS} -fuse-ld=lld -rtlib=compiler-rt -unwindlib=libunwind -Wl,--as-needed"
-# LDFLAGS="${LDFLAGS} --threads 4"
+
+RUSTFLAGS="-C opt-level=3 -C target-cpu=native"
 
 # FEATURES="getbinpkg binpkg-request-signature"
 # EMERGE_DEFAULT_OPTS="-X 'sys-devel/gcc'"
@@ -46,6 +46,7 @@ XTABLES_ADDONS=""
 COLLECTD_PLUGINS=""
 GPSD_PROTOCOLS=""
 
+ACCEPT_KEYWORDS="~amd64"
 ACCEPT_LICENSE="-* @FREE"
 
 BINPKG_COMPRESS="zstd"

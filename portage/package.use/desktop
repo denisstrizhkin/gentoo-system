@@ -13,10 +13,9 @@ x11-themes/catppuccin-gtk frappe latte macchiato mocha
 x11-themes/tela-icon-theme standard black blue brown dracula green grey kde manjaro
 x11-themes/tela-icon-theme nord orange pink purple red ubuntu yellow -kde
 
-# Noto fonts for maximum characters support
-# media-fonts/noto cjk
 # Fonts
 media-fonts/fonts-meta cjk emoji ms
+media-fonts/nerdfonts jetbrainsmono
 
 # QT
 dev-qt/qtbase gui
