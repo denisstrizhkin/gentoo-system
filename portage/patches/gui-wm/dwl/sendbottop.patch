@@ -1,0 +1,42 @@
+diff --git a/dwl.c b/dwl.c
+index bf763df..cf02630 100644
+--- a/dwl.c
++++ b/dwl.c
+@@ -322,6 +322,8 @@ static void setgamma(struct wl_listener *listener, void *data);
+ static void setlayout(const Arg *arg);
+ static void setmfact(const Arg *arg);
+ static void setmon(Client *c, Monitor *m, uint32_t newtags);
++static void sendbottom(const Arg *arg);
++static void sendtop(const Arg *arg);
+ static void setpsel(struct wl_listener *listener, void *data);
+ static void setsel(struct wl_listener *listener, void *data);
+ static void setup(void);
+@@ -2244,6 +2246,26 @@ setmon(Client *c, Monitor *m, uint32_t newtags)
+ 	focusclient(focustop(selmon), 1);
+ }
+ 
++void
++sendbottom(const Arg *arg)
++{
++	/* Send client to the bottom of the stack */
++	Client *sel = focustop(selmon);
++	if (!sel || sel->isfullscreen)
++		return;
++	wlr_scene_node_lower_to_bottom(&sel->scene->node);
++	xytonode(cursor->x, cursor->y, NULL, &c, NULL, &sx, &sx);
++	focusclient (c, 0);
++}
++
++void
++sendtop(const Arg *arg)
++{
++	/* Send client to the top of the stack */
++	Client *sel = focustop(selmon);
++	if (!sel || sel->isfullscreen)
++		return;
++	focusclient(sel, 1);
++}
++
+ void
+ setpsel(struct wl_listener *listener, void *data)
+ {

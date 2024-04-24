@@ -1,0 +1,14 @@
+diff --git a/dwl.c b/dwl.c
+index 5867b0c..6492de3 100644
+--- a/dwl.c
++++ b/dwl.c
+@@ -1559,6 +1559,9 @@
+ 	} else {
+ 		applyrules(c);
+ 	}
++	if (!c->mon->lt[c->mon->sellt]->arrange)
++		setfloating(c, 1);
++ 
+ 	printstatus();
+ 
+ unset_fullscreen:
