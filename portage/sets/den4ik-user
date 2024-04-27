@@ -7,7 +7,7 @@ app-misc/ani-cli
 app-misc/zellij
 app-shells/direnv
 app-text/htmltidy
-dev-util/shellcheck
+# dev-util/shellcheck
 games-emulation/ppsspp
 games-puzzle/katawa-shoujo
 games-util/game-device-udev-rules
@@ -17,15 +17,15 @@ media-gfx/imagemagick
 media-gfx/imv
 media-sound/audacious
 media-sound/cmus
-media-sound/helvum
+# media-sound/helvum
 media-sound/pulsemixer
-net-im/nheko
+# net-im/nheko
 net-irc/weechat
 net-misc/remmina
 net-misc/ytfzf
-sci-physics/ovito
+# sci-physics/ovito
 sys-apps/fd
 sys-apps/flatpak
 sys-apps/ripgrep
-www-client/firefox
+# www-client/firefox
 x11-terms/kitty
