@@ -1,1 +1,1 @@
-../../var/db/repos/den4ik/profiles/desktop-nomultilib-23.0
+../../var/db/repos/den4ik/profiles/desktop-musl-llvm-23.0

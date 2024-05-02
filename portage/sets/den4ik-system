@@ -27,7 +27,7 @@ sys-apps/mlocate
 sys-apps/usbutils
 sys-fs/btrfs-progs
 sys-fs/dosfstools
-sys-fs/xfsprogs
+# sys-fs/xfsprogs
 sys-kernel/dracut
 sys-kernel/gentoo-kernel
 sys-kernel/installkernel
