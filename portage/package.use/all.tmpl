@@ -5,7 +5,6 @@
 */* opus ogg flac
 */* vpx
 
-*/* -wayland -egl
 */* -man -doc -gtk-doc -telemetry
 */* -nls
 
@@ -46,20 +45,19 @@ app-editors/emacs gui dynamic-loading json harfbuzz
 app-emacs/emacs-common gui
 
 # FCITX
-app-i18n/fcitx-configtool -config-qt
 app-i18n/fcitx-qt qt5 qt6
 
-# MATE
-mate-base/mate -themes
-x11-wm/marco xinerama
+# X11
 x11-libs/libdrm video_cards_radeon
+media-libs/mesa X
+media-libs/libglvnd X
 
 # LibreOffice
 dev-libs/xmlsec nss
 
 # Skanlite
 app-text/poppler cairo
- 
+
 # OpenCV
 media-libs/opencv ffmpeg -opengl
 

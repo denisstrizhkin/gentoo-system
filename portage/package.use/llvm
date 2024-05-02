@@ -1,6 +1,6 @@
-*/* clang llvm-libunwind
+# */* clang llvm-libunwind
 
-sys-devel/clang-common  default-compiler-rt default-lld
+# sys-devel/clang-common  default-compiler-rt default-lld
 sys-libs/zlib minizip
 
 sys-devel/gcc -lto -pgo

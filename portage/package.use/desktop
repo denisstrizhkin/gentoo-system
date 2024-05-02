@@ -1,10 +1,31 @@
 # Global
-*/* xinerama
-*/* -gnome -gui -qt5 -qt6
+*/* wayland screencast
+*/* -X -gnome -kde -gui -qt5 -qt6
+*/* -accessibility
 
-
-# MATE
+# X11
 x11-libs/libdrm video_cards_radeon
+x11-libs/cairo X
+dev-cpp/cairomm X
+x11-libs/gtk+ X
+media-libs/libepoxy X
+media-libs/libsdl2 X
+media-libs/libsdl X
+app-i18n/fcitx-qt X
+sys-apps/dbus X
+dev-qt/qtgui X
+x11-libs/libxkbcommon X
+sys-apps/flatpak X
+
+# Wayland
+media-libs/libsdl2 gles2
+
+# DWL
+gui-wm/dwl X savedconfig
+gui-libs/wlroots X tinywl
+
+# swaybg
+gui-apps/swaybg gdk-pixbuf
 
 # Themes
 x11-themes/catppuccin-cursors frappe latte macchiato mocha
@@ -22,3 +43,9 @@ dev-qt/qtmultimedia qml
 # Android phones
 */* mtp
 gnome-base/gvfs fuse
+
+# MPV
+media-video/mpv -opengl -xv
+
+# Remmina
+net-misc/remmina -appindicator

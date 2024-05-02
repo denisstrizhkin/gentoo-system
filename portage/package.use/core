@@ -1,3 +1,5 @@
+*/* verify-sig
+
 sys-kernel/installkernel dracut
 
 app-admin/doas persist
@@ -6,4 +8,7 @@ sys-apps/openrc sysv-utils -netifrc
 
 # Rust
 dev-lang/rust-bin rust-analyzer rustfmt rust-src
-dev-lang/rust rust-analyzer rustfmt rust-src system-llvm
+dev-lang/rust     rust-analyzer rustfmt rust-src system-llvm system-bootstrap
+
+# Fix runc
+sys-libs/argp-standalone static-libs
