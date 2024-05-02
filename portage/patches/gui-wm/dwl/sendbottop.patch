@@ -11,7 +11,7 @@ index bf763df..cf02630 100644
  static void setpsel(struct wl_listener *listener, void *data);
  static void setsel(struct wl_listener *listener, void *data);
  static void setup(void);
-@@ -2244,6 +2246,26 @@ setmon(Client *c, Monitor *m, uint32_t newtags)
+@@ -2244,6 +2246,30 @@ setmon(Client *c, Monitor *m, uint32_t newtags)
  	focusclient(focustop(selmon), 1);
  }
  
@@ -19,6 +19,8 @@ index bf763df..cf02630 100644
 +sendbottom(const Arg *arg)
 +{
 +	/* Send client to the bottom of the stack */
++	double sx = 0;
++	Client *c = NULL;
 +	Client *sel = focustop(selmon);
 +	if (!sel || sel->isfullscreen)
 +		return;
