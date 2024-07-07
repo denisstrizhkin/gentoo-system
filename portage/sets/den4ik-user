@@ -1,26 +1,15 @@
-# dev-util/shellcheck
-# media-gfx/gimp
-# media-sound/audacity
-# media-sound/cmus
-# media-sound/helvum
-# net-im/nheko
-# net-im/telegram-desktop
-# sci-physics/ovito
-# www-client/firefox
 app-admin/keepassxc
 app-editors/emacs
 app-misc/ani-cli
 app-misc/zellij
 app-shells/direnv
 app-text/htmltidy
-games-emulation/ppsspp
-games-puzzle/katawa-shoujo
 games-util/game-device-udev-rules
 media-gfx/imagemagick
 media-gfx/imv
 media-sound/audacious
 media-sound/pulsemixer
-net-irc/weechat
+net-irc/senpai
 net-misc/remmina
 net-misc/ytfzf
 sys-apps/fd
@@ -28,4 +17,3 @@ sys-apps/flatpak
 sys-apps/ripgrep
 sys-fs/fuse:0
 x11-misc/pcmanfm
-x11-terms/kitty

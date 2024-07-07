@@ -1,0 +1,9 @@
+app-emacs/corfu
+app-emacs/ebuild-mode
+app-emacs/envrc
+app-emacs/evil
+app-emacs/magit
+app-emacs/use-package
+app-emacs/which-key
+dev-python/python-lsp-mypy
+dev-python/python-lsp-server

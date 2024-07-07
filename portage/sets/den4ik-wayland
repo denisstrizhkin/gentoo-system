@@ -1,0 +1,12 @@
+gui-apps/foot
+gui-apps/grim
+gui-apps/kanshi
+gui-apps/slurp
+gui-apps/swaybg
+gui-apps/swaybg
+gui-apps/wl-clipboard
+gui-apps/wlr-randr
+gui-apps/wmenu
+gui-libs/xdg-desktop-portal-wlr
+gui-wm/river
+sys-apps/xdg-desktop-portal-gtk
