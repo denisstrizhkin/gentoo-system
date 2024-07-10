@@ -1,6 +1,9 @@
+app-text/zathura-pdf-poppler
+media-video/vlc
+net-libs/webkit-gtk
 sys-apps/systemd
+sys-auth/elogind
+sys-auth/polkit
+sys-devel/clang:17
 sys-devel/gcc
 x11-libs/gtk+:2
-# net-libs/webkit-gtk
-media-video/vlc
-app-text/zathura-pdf-poppler
