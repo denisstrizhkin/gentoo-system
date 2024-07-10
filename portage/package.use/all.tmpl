@@ -1,9 +1,9 @@
 # Globaud
 */* pulseaudio pipewire
 */* vulkan dist-kernel bluetooth
-*/* webp gif heif tiff jpeg2k
-*/* opus ogg flac
-*/* vpx
+*/* jpeg png svg webp gif heif tiff jpeg2k
+*/* opus ogg flac mp3
+*/* vpx 
 
 */* -man -doc -gtk-doc -telemetry
 */* -nls
@@ -21,9 +21,6 @@ dev-cpp/eigen boost
 # Make top look cool
 sys-process/procps modern-top
 
-# Fix fastfetch seg fault
-app-misc/fastfetch pci
-
 # nftables
 net-firewall/nftables json python
 
@@ -34,14 +31,11 @@ dev-util/vulkan-tools cube
 media-libs/libheif x265
 
 # KeePassXC
-app-admin/keepassxc keeshare browser
+app-admin/keepassxc keeshare
 sys-libs/zlib minizip
 
-# nheko
-net-im/nheko video voip
-
 # Emacs
-app-editors/emacs gui dynamic-loading json harfbuzz
+app-editors/emacs gui tree-sitter
 app-emacs/emacs-common gui
 
 # FCITX
@@ -51,9 +45,6 @@ app-i18n/fcitx-qt qt5 qt6
 x11-libs/libdrm video_cards_radeon
 media-libs/mesa X
 media-libs/libglvnd X
-
-# LibreOffice
-dev-libs/xmlsec nss
 
 # Skanlite
 app-text/poppler cairo
@@ -81,23 +72,11 @@ net-misc/networkmanager iwd wifi -wext -ppp
 media-sound/pulseaudio -daemon
 media-video/pipewire sound-server pipewire-alsa
 
-# Required by www-client/firefox-118.0.2::gentoo[system-libvpx]
-media-libs/libvpx postproc
-
-# Required by app-portage/pfl-3.2.1::gentoo[network-cron]
+# pfl
 sys-apps/util-linux caps
-
-# xdelta3
-dev-util/xdelta lzma
 
 # Audacious
 media-sound/audacious ffmpeg
-
-# Audacity
-media-sound/audacity ffmpeg
-
-# Firefox hardened
-x11-base/xorg-server xvfb
 
 # Catalyst
 sys-apps/util-linux python
